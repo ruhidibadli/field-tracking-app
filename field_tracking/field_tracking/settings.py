@@ -82,12 +82,11 @@ WSGI_APPLICATION = 'field_tracking.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': 'E1tqIe1th3rT98rVPGHr',
-        'HOST': 'containers-us-west-175.railway.app',
-        'PORT': '6159',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'ruhidibadli$field_app', 
+        'USER': 'ruhidibadli',
+        'PASSWORD': 'testuser123456DB',
+        'HOST': 'ruhidibadli.mysql.pythonanywhere-services.com', 
     }
 }
 
