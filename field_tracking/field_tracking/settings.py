@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +26,7 @@ SECRET_KEY = 'django-insecure-tq7dng8yw!4)qnq1^z9i(a08msnefdh6@tqib5e^1haj-mz^^u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ruhidibadli.pythonanywhere.com', 'containers-us-west-153.railway.app']
 
 
 # Application definition
@@ -82,11 +83,11 @@ WSGI_APPLICATION = 'field_tracking.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway', 
+        'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': 'HGeNyrdjteOFSlDINRBj',
-        'HOST': 'containers-us-west-153.railway.app', 
-        'PORT': '5596',
+        'PASSWORD': 'E1tqIe1th3rT98rVPGHr',
+        'HOST': 'containers-us-west-175.railway.app',
+        'PORT': '6159',
     }
 }
 
@@ -126,7 +127,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
