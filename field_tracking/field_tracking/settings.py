@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-
+    'rest_framework',
 
     ## Base APPs
     'accounts.apps.AccountsConfig',
@@ -81,12 +81,12 @@ WSGI_APPLICATION = 'field_tracking.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'field_tracking', 
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway', 
         'USER': 'postgres',
-        'PASSWORD': 'testadmin',
-        'HOST': '127.0.0.1', 
-        'PORT': '5432',
+        'PASSWORD': 'HGeNyrdjteOFSlDINRBj',
+        'HOST': 'containers-us-west-153.railway.app', 
+        'PORT': '5596',
     }
 }
 
