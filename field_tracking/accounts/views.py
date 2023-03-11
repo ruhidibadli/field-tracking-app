@@ -18,13 +18,13 @@ class LoginAPI(APIView):
 
             if serializer.is_valid():
                 user_type = serializer.validated_data.get('user_type')
-                email = serializer.validated_data.get('email')
+                username = serializer.validated_data.get('username')
                 password = serializer.validated_data.get('password')
 
                 is_user = False
                 data = None
                 try:
-                    user = User.objects.get(email=email)
+                    user = User.objects.get(username=username)
 
                     is_user = authenticate(request=request, username=user.username, password=password)
                 except:
