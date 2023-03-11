@@ -30,7 +30,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ruhidibadli.pythonanywhere.com', 'containers-us-west-153.railway.app']
+ALLOWED_HOSTS = ['ruhidibadli.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
