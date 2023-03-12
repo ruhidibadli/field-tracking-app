@@ -36,6 +36,7 @@ ALLOWED_HOSTS = ['ruhidibadli.pythonanywhere.com', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
+    'daphne',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -49,6 +50,8 @@ INSTALLED_APPS = [
     'accounts.apps.AccountsConfig',
     'store.apps.StoreConfig',
 ]
+
+ASGI_APPLICATION = 'field_tracking.asgi.application'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
